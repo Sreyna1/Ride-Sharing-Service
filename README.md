@@ -16,7 +16,7 @@ Before running the services, ensure you have the following installed:
 
 ## **2. Clone the Repository**  
 sh
-git clone https://github.com/your-repo-name.git
+git clone https://github.com/Sreyna1/Ride-Sharing-Service.git
 cd your-repo-name
 
 ---
