@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package com.common.grpc.passenger;
+
+// Options for Java
+option java_multiple_files = true;
+option java_package = "com.common.grpc.passenger";
+option java_outer_classname = "PassengerProto";
+
+// Define gRPC service
+service PassengerService {
+  rpc GetPassenger (PassengerRequest) returns (PassengerResponse);
+  rpc SavePassenger (PassengerRequest) returns (PassengerResponse);
+}
+
+// Define messages
+message PassengerRequest {
+  int64 id = 1;
+  string name = 2;
+  string phone = 3;
+}
+
+message PassengerResponse {
+  int64 id = 1;
+  string name = 2;
+  string phone = 3;
+}
